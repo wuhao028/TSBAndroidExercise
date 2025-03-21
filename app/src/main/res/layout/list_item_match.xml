@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<co.nz.tsb.interview.bankrecmatchmaker.CheckedListItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/default_content_padding"
+    android:paddingRight="@dimen/default_content_padding">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_marginStart="@dimen/default_content_padding">
+
+        <TextView
+            android:id="@+id/text_main"
+            style="@style/CellRegularText"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_item_text_height"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@id/text_total"
+            android:gravity="bottom" />
+
+        <TextView
+            android:id="@+id/text_total"
+            style="@style/CellRegularText"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_item_text_height"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="bottom" />
+
+        <TextView
+            android:id="@+id/text_sub_left"
+            style="@style/CellSubText"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_item_text_height"
+            android:layout_below="@id/text_main"
+            android:layout_alignStart="@id/text_main"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="top" />
+
+        <TextView
+            android:id="@+id/text_sub_right"
+            style="@style/CellSubText"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_item_text_height"
+            android:layout_below="@id/text_total"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="top" />
+
+    </RelativeLayout>
+
+</co.nz.tsb.interview.bankrecmatchmaker.CheckedListItem>
