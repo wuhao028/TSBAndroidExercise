@@ -35,9 +35,8 @@ public class FindMatchActivity extends AppCompatActivity {
 
         float target = getIntent().getFloatExtra(TARGET_MATCH_VALUE, 10000f);
         currentTotal = target;
-
+        
         matchText.setText(getString(R.string.select_matches, String.format("%.2f", target)));
-
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         List<MatchItem> items = buildMockData();
